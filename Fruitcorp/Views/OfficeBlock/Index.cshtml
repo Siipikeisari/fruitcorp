@@ -1,0 +1,13 @@
+﻿@using EPiServer.Core;
+@model Fruitcorp.Models.Blocks.OfficeBlock
+
+<div>
+    <h2 @Html.EditAttributes(x => x.Header)>@Model.Header </h2>
+    <p @Html.EditAttributes(x => x.Text)>@Model.Text</p>
+    <span @Html.EditAttributes(x => x.Image)>
+        <a title="@Model.Header" href="@Url.ContentUrl(Model.Link)">
+            <img src="@Url.ContentUrl(Model.Image)" alt="@Model.Header"/>
+        </a>
+
+    </span>
+</div>

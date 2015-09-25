@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<languages>
+  <language name="English" id="en">
+    <validation>
+      <metadescription>
+        A value for metadescription is required!
+      </metadescription>
+    </validation>
+    <pagetypes>
+      <pagetype name ="StartPage">
+        <name>Start Page</name>
+        <description>
+          Used for the Site's Start Page.
+        </description>        
+      </pagetype>
+
+      <pagetype name ="StandardPage">
+        <name>Standard Page</name>
+        <description>
+          Used for standard editorial content pages.
+        </description>
+        <property name="MainIntro">
+          <caption>Preamble</caption>
+          <help>
+            Short, Descriptive introduction text.
+          </help>
+        </property>
+        <property name="MainBody">
+          <caption>Body Text</caption>
+          <help>The page's main content</help>
+        </property>
+        <!--Common properties-->
+        <common>
+          <property name="Title">
+            <caption>Title</caption>
+            <help>
+              The pages title in the head, used by search enginges</help>
+          </property>
+          <property name="MetaDescription">
+            <caption>Meta Description</caption>
+            <help>
+              Short description of the page, used by search enginges.
+            </help>
+          </property>
+        </common>
+      </pagetype>
+      <!--Groups-->
+    <groups>
+      <group name="Specialized">Specialized</group>
+      <group name="Editorial">Editorial</group>
+    </groups>
+    </pagetypes>
+  </language>
+</languages>

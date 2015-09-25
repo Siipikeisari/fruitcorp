@@ -1,0 +1,22 @@
+﻿@using Fruitcorp.Helpers
+
+@{
+    Layout = "~/Views/Shared/_Root.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-md-3">
+        <div class="sub-navigation">
+       
+            @{Html.RenderSubNavigation();}
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        @{Html.RenderBreadCrumb();}
+        @RenderBody()
+    </div>
+    <div class="col-md-3"></div>
+
+</div>
