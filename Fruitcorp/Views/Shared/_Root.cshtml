@@ -7,35 +7,45 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content="@Model.MetaDescription" />
+    <!--Bootstrap-->
     <link href="~/Content/bootstrap.min.css" rel="stylesheet">
+    <!--Sites own-->
     <link href="~/Content/Site.css" rel="stylesheet" />
+    <!-- Social Icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <title>@Model.Title</title>
     @Html.RenderEPiServerQuickNavigator()
 
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-2"><h3 class="text-muted">Fruit</h3></div>
-        </div>
-        <div id="row">
-            <div class="col-md-12">
-                @{ Html.RenderMainNavigation();}
-            </div>
-            
-        </div>
-           
-        <div id="row">
-            <div class="col-md-12">
-                @RenderBody()
-            </div>
-           
-             
-        </div>
-           
-        
-       
 
+    <div class="container">
+        <div class="col-md-12">
+            @{ Html.RenderMainNavigation();}
+        </div>
+
+
+        <div class="col-md-12">
+            @RenderBody()
+
+        </div>
+        
+        <div class="footer">
+
+            <div class="row">
+                <div class="col-md-2">
+                    <ul class="Social-List">
+                        <li><span>Visit us on:</span></li>
+                        <li class="fa fa-facebook fa-2x"><a href="http://www.facebook.com"></a></li>
+                        <li class="fa fa-twitter fa-2x"><a href="http://wwww.twitter.com"></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
     </div>
+
+
 </body>
 </html>

@@ -1,5 +1,18 @@
 ﻿@model Fruitcorp.Models.Pages.StandardPage
 
-<h1>@Html.PropertyFor(x => x.PageName)</h1>
-<p class="lead">@Html.PropertyFor(x => x.MainIntro)</p>
- @Html.PropertyFor(x => x.MainBody)
+@*<div class="col-md-4">
+    @Html.PropertyFor(x => x.Content)
+</div>*@
+
+<div class="col-md-8">
+    <h1>@Html.PropertyFor(x => x.PageName)</h1>
+    <p>@Html.PropertyFor(x => x.MainIntro)</p>
+    @Html.PropertyFor(x => x.MainBody)
+</div>
+
+
+
+
+
+
+

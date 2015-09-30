@@ -64,5 +64,7 @@ namespace Fruitcorp.Models.Pages
         public virtual string MainIntro { get; set; }
 
         public virtual XhtmlString MainBody { get; set; }
+
+        public virtual ContentArea Content { get; set; }
     }
 }

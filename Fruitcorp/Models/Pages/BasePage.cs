@@ -30,5 +30,7 @@ namespace Fruitcorp.Models.Pages
             get { return this.GetPropertyValue(x => x.MetaDescription); } 
             set { this.SetPropertyValue(x => x.MetaDescription,value); }
         }
+
+  
     }
 }

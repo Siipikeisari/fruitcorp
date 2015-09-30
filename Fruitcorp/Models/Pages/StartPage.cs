@@ -16,6 +16,11 @@ namespace Fruitcorp.Models.Pages
     [AvailableContentTypes(Include = new[] { typeof(StandardPage)})]
     public class StartPage : BasePage
     {
-        
+        public virtual string Intro { get; set; }
+        public virtual ContentArea ProductOne { get; set; }
+
+        public virtual ContentArea ProductTwo { get; set; }
+
+        public virtual ContentArea ProductThree { get; set; }
     }
 }

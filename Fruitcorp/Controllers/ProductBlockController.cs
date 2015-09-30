@@ -11,9 +11,9 @@ using Fruitcorp.Models.Blocks;
 
 namespace Fruitcorp.Controllers
 {
-    public class OfficeBlockController : BlockController<OfficeBlock>
+    public class ProductBlockController : BlockController<ProductBlock>
     {
-        public override ActionResult Index(OfficeBlock currentBlock)
+        public override ActionResult Index(ProductBlock currentBlock)
         {
             return PartialView(currentBlock);
         }

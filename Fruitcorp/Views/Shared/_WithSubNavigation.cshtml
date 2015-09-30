@@ -1,22 +1,31 @@
 ﻿@using Fruitcorp.Helpers
+@using Fruitcorp.Models.Blocks
+
+@model Fruitcorp.Models.Pages.StandardPage
 
 @{
     Layout = "~/Views/Shared/_Root.cshtml";
 }
 
 
-<div class="row">
-    <div class="col-md-3">
-        <div class="sub-navigation">
-       
-            @{Html.RenderSubNavigation();}
+    <div class="row">
+        <div class="col-md-3">
+            <div class="Block-Content">@Html.PropertyFor(x => x.Content)</div>
         </div>
-    </div>
-    
-    <div class="col-md-6">
-        @{Html.RenderBreadCrumb();}
-        @RenderBody()
-    </div>
-    <div class="col-md-3"></div>
 
-</div>
+        <div class="col-md-2">
+            <div class="sub-navigation">
+                @{Html.RenderSubNavigation();}
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            @{Html.RenderBreadCrumb();}
+            @RenderBody()
+        </div>
+
+    </div>
+
+
+
+
